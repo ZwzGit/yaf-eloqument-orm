@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<title>baikit</title>
+<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/home/css/style.css">
+<script src="/js/vue.js"></script>
+<script src="/js/vue-resource.min.js"></script>
+<!--<script src="/static/bootstrap/js/bootstrap.min.js"></script>-->
+</head>
+<body class="home-template">
+<!-- start header -->
+<header class="main-header" style="background:rgba(0, 0, 0, 0.78);padding-top: 30px;padding-bottom: 30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p><img class="img-circle" style="width: 100px" src="/static/home/img/user.png"/>
+                    <span style="padding-left: 30px;font-size: 18px;color: rgba(255, 255, 255, 0.61);">让你值得骄傲的不是你比朋友优越，而是比昨天的你更进一步！</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+<!-- start navigation -->
+<nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        <li class="nav-current" role="presentation"><a href="/">首页</a></li>
+                        <li role="presentation"><a href="#" target="_blank">HTML</a></li>
+                        <li role="presentation"><a href="#" target="_blank">VUE</a></li>
+                        <li role="presentation"><a href="#" target="_blank">PHP</a></li>
+                        <li role="presentation"><a href="#" target="_blank">NGINX</a></li>
+                        <li role="presentation"><a href="#" target="_blank">API</a></li>
+                        <li role="presentation"><a href="#" target="_blank">About me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- end navigation -->
+<!-- start site's main content area -->
+<section class="content-wrap">
+    <div class="container">
+        <div class="row">
+            <main class="col-md-8 main-content">
+                <article id="69" class="post">
+                    <div class="post-head">
+                        <h1 class="post-title"><a href="javascript:void (0);">很懒不想写东西</a></h1>
+                        <div class="post-meta">
+                            <span class="author">作者：<a href="javascript:void (0);">baikit</a></span> •
+                            <time class="post-date" datetime="2016年7月20日7点29分" title="2016年7月20日晚上7点29分">
+                                2016年7月20日
+                            </time>
+                        </div>
+                    </div>
+                    <div class="featured-media">
+                        <a href="javascript:void (0);"><img
+                            src="/static/home/img/article69.jpg"
+                            alt="article69"></a>
+                    </div>
+                    <div class="post-content">
+                        <p>完全不想动，累成狗</p>
+                    </div>
+                    <div class="post-permalink">
+                        <a href="javascript:void (0);" class="btn btn-default">阅读全文</a>
+                    </div>
+                    <footer class="post-footer clearfix">
+                        <div class="pull-left tag-list">
+                            <i class="fa fa-folder-open-o"></i>
+                        </div>
+                        <div class="pull-right share">
+                        </div>
+                    </footer>
+                </article>
+                <article id="68" class="post">
+                    <div class="post-head">
+                        <h1 class="post-title"><a href="javascript:void (0);">博主又偷懒啦</a></h1>
+                        <div class="post-meta">
+                            <span class="author">作者：<a href="javascript:void (0);">baikit</a></span> •
+                            <time class="post-date" datetime="2017年6月20日凌晨2点49分" title="2016年6月20日凌晨2点49分">
+                                2017年6月20日
+                            </time>
+                        </div>
+                    </div>
+                    <div class="featured-media">
+                        <a href="javascript:void (0);"><img
+                            src="/static/home/img/article68.jpg"
+                            alt="article68"></a>
+                    </div>
+                    <div class="post-content">
+                        <p>哎，偷偷懒吧。反正没人看</p>
+                    </div>
+                    <div class="post-permalink">
+                        <a href="javascript:void (0);" class="btn btn-default">阅读全文</a>
+                    </div>
+                    <footer class="post-footer clearfix">
+                        <div class="pull-left tag-list">
+                            <i class="fa fa-folder-open-o"></i>
+                        </div>
+                        <div class="pull-right share">
+                        </div>
+                    </footer>
+                </article>
+            </main>
+            <aside class="col-md-4 sidebar" id="right-wrap">
+                <!---->
+                <div class="widget">
+                    <h4 class="title">北京时间</h4>
+                    <div class="content community">
+                        <p>{{ time }}</p>
+                    </div>
+                </div>
+                <!---->
+                
+                <!-- start tag cloud widget -->
+                <div class="widget">
+                    <h4 class="title">交流灌水</h4>
+                    <div class="content community">
+                        <p>QQ群：<span>{{ qq }}</span></p>
+                    </div>
+                </div>
+                <!-- end tag cloud widget -->
+                <!-- start widget -->
+                <div class="widget">
+                    <h4 class="title">最近</h4>
+                    <div>
+                        <span>{{ latest }}</span>
+                    </div>
+                </div>
+                <!-- end widget -->
+                <!-- start tag cloud widget -->
+                <div class="widget">
+                    <h4 class="title">标签云</h4>
+                    <div>
+                        <span>{{ span }}</span>
+                    </div>
+                </div>
+                <!-- end tag cloud widget -->
+            </aside>
+        </div>
+    </div>
+</section>
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Copyright © <a href="https://www.baikit.com/">BaiKit 小白蟹</a></span> |
+                <span><a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备16031288号-1</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    let checkBrowser = function () {
+        let userAgent = navigator.userAgent;
+        if (userAgent.indexOf('MSIE') > -1) {
+            location.href = "about:blank";
+        }
+    };
+    checkBrowser();
+    new Vue({
+        el: '#right-wrap',
+        data: {
+            time : '',
+            qq : '',
+            latest : '',
+            span : ''
+        },
+        methods : {
+            getdata : function () {
+                this.$http.get('/index/index/loadmessage').then(
+                    (res) => {
+                        this.qq = res.data.qq;
+                        this.latest = res.data.latest;
+                        this.span = res.data.span;
+                    },
+                    (res) => {
+                        alert(res);
+                    }
+                );
+            },
+            initDate : function () {
+                let date = new Date();
+                let y = date.getFullYear();
+                let m = date.getMonth()+1;
+                let d = date.getUTCDate();
+                let h = date.getHours();
+                let i = date.getMinutes();
+                let s = date.getSeconds();
+                this.time = y +'年'+ m +'月' + d +'日  ' + h +'时'+ i +'分'+ s +'秒';
+                setTimeout(this.initDate,1000);
+            }
+        },
+        created: function () {
+            this.initDate();
+            this.getdata();
+        },
+        mounted : function () {
+            
+        }
+
+    })
+</script>
+</body>
+</html>
